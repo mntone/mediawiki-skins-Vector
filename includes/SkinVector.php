@@ -54,7 +54,7 @@ class SkinVector extends SkinTemplate {
 	public function enableResponsiveMode() {
 		if ( !$this->responsiveMode ) {
 			$out = $this->getOutput();
-			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
+			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no' );
 			$out->addModuleStyles( 'skins.vector.styles.responsive' );
 			$this->responsiveMode = true;
 		}
